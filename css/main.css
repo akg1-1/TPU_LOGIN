@@ -164,15 +164,16 @@ iframe {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: #9053c7;
-  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  flex-direction: column;
+  height: 100vh; /* Задаем высоту на весь экран */
+  background-image: url('../images/politeh.jpg'); /* Путь к вашему изображению */
+  background-repeat: no-repeat; /* Не повторять изображение */
+  background-position: center; /* Центрируем изображение */
+  background-size: auto; /* Не растягиваем изображение (по умолчанию) */
+  background-color: rgba(200, 200, 200, 0.75); /* Белый цвет с 50% прозрачностью */
+  background-blend-mode: overlay;/* Смешивание цвета с фоном */
 }
 
 .wrap-login100 {
