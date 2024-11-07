@@ -253,7 +253,7 @@ iframe {
   z-index: 1;
   margin-bottom: 10px;
 }
-.test
+.info-text
 {
   margin-top: 50px;
   font-family: Itim-Bold;       
@@ -473,6 +473,10 @@ iframe {
   {
     width: 45%;
   }  
+  .info-text
+  {
+    width: 50%;
+  }
 
 }
 
