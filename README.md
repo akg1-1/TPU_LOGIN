@@ -14,4 +14,4 @@
 
 У каждого из нас работает git page, поэтому переходите либо [сюда](https://daz445.github.io/TPU_LOGIN/), либо на [зеркало](https://akg1-1.github.io/TPU_LOGIN/)
 
-Если вы хотите посмотреть как выглядел старый вход, переходите [сюда](https://daz445.github.io/TPU_LOGIN/old), либо на [зеркало](https://akg1-1.github.io/TPU_LOGIN/old) 
+Если вы хотите посмотреть как выглядел старый вход, переходите [сюда](https://daz445.github.io/TPU_LOGIN/old/index.html), либо на [зеркало](https://akg1-1.github.io/TPU_LOGIN/old/index.html) 
