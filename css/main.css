@@ -10,8 +10,6 @@
   font-weight: normal; 
   font-style: normal;
 }
-
-
 @font-face {
   font-family: 'Itim-Bold';
   src: url('../fonts/Itim.ttf'); 
@@ -180,13 +178,12 @@ iframe {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh; /* Задаем высоту на весь экран */
-  background-image: url('../images/politeh.jpg'); /* Путь к вашему изображению */
-  background-repeat: no-repeat; /* Не повторять изображение */
-  background-position: center; /* Центрируем изображение */
-  background-size: auto; /* Не растягиваем изображение (по умолчанию) */
-  background-color: rgba(200, 200, 200, 0.75); /* Белый цвет с 50% прозрачностью */
-  background-blend-mode: overlay;/* Смешивание цвета с фоном */
+  background-image: url('../images/politeh.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: auto;
+  background-color: rgba(200, 200, 200, 0.75);
+  background-blend-mode: overlay;
 }
 
 .login_conteiner {
@@ -208,18 +205,33 @@ iframe {
   margin-bottom: 50px ;
 }
 
-.login100-pic {
+.login-icon {
   width: 316px;
 }
 
-.login100-pic img {
-  max-width: 100%;
+.login-icon img {
+  max-width: 80%;
 }
 
 
 .login100-form {
   margin-top: 25px;
   width: 340px;
+  font-family: Itim-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  
+  text-transform: uppercase;
+
+
+  border-radius: 25px;
+ 
+  
+  justify-content: center;
+  align-items: center;
+  
+
+
 }
 
 
@@ -382,47 +394,91 @@ iframe {
 
 
 /*------------------------------------------------------------------
-[ Responsive ]*/
+[  ]*/
 
 
 
 @media (max-width: 992px) {
-  .wrap-login100 {
+  .login_conteiner {
     padding: 177px 90px 33px 85px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title-form
+  {
+    size: 50%;
+    display: flex;
+    justify-content: center;
   }
 
-  .login100-pic {
+  .login-icon {
     width: 35%;
   }
-
-  .login100-form {
-    width: 50%;
+  .login100-form
+  {
+    width: 95%;
+  }
+  .login-input
+  {
+    width: 10%;
+  }  
+  
+  .login-btn
+  {
+    width: 95%;
+  }
+ 
+  .password{
+    width: 3%;
+  }
+  .login{
+    width: 3%;
   }
 }
 
 @media (max-width: 768px) {
-  .wrap-login100 {
+  .login_conteiner {
     padding: 100px 80px 33px 80px;
+   
   }
 
-  .login100-pic {
+  .login-icon {
     display: none;
   }
 
   .login100-form {
-    width: 100%;
+    width: 75%;
+  }
+  .login-form-title{
+    font-size: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (max-width: 576px) {
-  .wrap-login100 {
+  .login_conteiner {
     padding: 100px 15px 33px 15px;
   }
+  .login-form-title{
+    font-size: 40px;
+  }
+  .login-btn
+  {
+    width: 75%;
+  }
+  .login100-form
+  {
+    width: 45%;
+  }  
+
 }
 
 
 /*------------------------------------------------------------------
-[ Alert validate ]*/
+[ Mobile ]*/
 
 .validate-input {
   position: relative;
