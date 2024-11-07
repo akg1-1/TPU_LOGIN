@@ -253,7 +253,7 @@ iframe {
   z-index: 1;
   margin-bottom: 10px;
 }
-.info-text
+.info-form
 {
   margin-top: 50px;
   font-family: Itim-Bold;       
@@ -263,6 +263,8 @@ iframe {
   text-align: center;
   width: 100%;
   display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .input-form {
