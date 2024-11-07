@@ -601,10 +601,12 @@ iframe {
 @media (max-width: 576px) {
   .alert-validate::before{
     font-size: 9px;   
+    visibility: visible;
   }
 }
 @media (max-width: 460px) {
   .alert-validate::before{
-    font-size: 8px;    
+    font-size: 8px;  
+    visibility: visible;  
   }
 }
