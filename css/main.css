@@ -492,7 +492,7 @@ iframe {
 
 @media (max-width: 460px) {
   .login_conteiner {
-    padding: 25px 5px 5px 5px;
+    padding: 50px 5px 5px 5px;
     width: 90%;
   }
   .login-form-title{
@@ -513,15 +513,15 @@ iframe {
   }
   .login
   {
-    width: 5%;
+    width: 10%;
   }
   .password
   {
-    width: 5%;
+    width: 10%;
   }
   a 
   {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -588,7 +588,7 @@ iframe {
 }
 @media (max-width: 992px) {
   .alert-validate::before {
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
   }
 }
@@ -600,14 +600,11 @@ iframe {
 }
 @media (max-width: 576px) {
   .alert-validate::before{
-    font-size: 9px;
-    visibility: hidden;   
+    font-size: 9px;   
   }
 }
 @media (max-width: 460px) {
   .alert-validate::before{
-    font-size: 8px;
-    visibility: hidden;
-    
+    font-size: 8px;    
   }
 }
