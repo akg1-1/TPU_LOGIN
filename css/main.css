@@ -191,7 +191,6 @@ iframe {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -220,13 +219,8 @@ iframe {
   font-family: Itim-Bold;
   font-size: 15px;
   line-height: 1.5;
-  
   text-transform: uppercase;
-
-
-  border-radius: 25px;
- 
-  
+  border-radius: 25px; 
   justify-content: center;
   align-items: center;
   
@@ -464,7 +458,7 @@ iframe {
 
 @media (max-width: 576px) {
   .login_conteiner {
-    padding: 5px 5px 5px 5px;
+    padding: 50px 5px 5px 5px;
     size: 95%;
   }
   .login-form-title{
@@ -482,12 +476,23 @@ iframe {
   {
     width: 80%;
   }
-
-}
+  .login
+  {
+    width: 5%;
+  }
+  .password
+  {
+    width: 5%;
+  }
+  a 
+  {
+    font-size: 14;
+  }
+} 
 
 @media (max-width: 460px) {
   .login_conteiner {
-    padding: 5px 5px 5px 5px;
+    padding: 25px 5px 5px 5px;
     width: 90%;
   }
   .login-form-title{
@@ -506,8 +511,18 @@ iframe {
     width: 80%;
     font-size: 8px;
   }
-
-
+  .login
+  {
+    width: 5%;
+  }
+  .password
+  {
+    width: 5%;
+  }
+  a 
+  {
+    font-size: 10px;
+  }
 }
 
 
@@ -571,28 +586,28 @@ iframe {
   visibility: visible;
   opacity: 1;
 }
-
 @media (max-width: 992px) {
   .alert-validate::before {
     visibility: visible;
     opacity: 1;
   }
 }
-
 @media (max-width: 768px) {
   .alert-validate::before{
     font-size: 14px;
+    visibility: hidden;
   }
 }
 @media (max-width: 576px) {
   .alert-validate::before{
     font-size: 9px;
-   
+    visibility: hidden;   
   }
 }
 @media (max-width: 460px) {
   .alert-validate::before{
     font-size: 8px;
+    visibility: hidden;
     
   }
 }
