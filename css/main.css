@@ -4,26 +4,39 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+@font-face {
+  font-family: 'Itim'; 
+  src: url('../fonts/Itim.ttf') format('opentype'); 
+  font-weight: normal; 
+  font-style: normal;
+}
+
 
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  font-family: 'Itim-Bold';
+  src: url('../fonts/Itim.ttf'); 
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Itim-Regular';
+  src: url('../fonts/Itim.ttf'); 
+  font-style: regular;
 }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  font-family: 'Itim-Medium';
+  src: url('../fonts/Itim.ttf'); 
+  font-style: medium;
 }
 
 @font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  font-family: 'Itim-Heavy';
+  src: url('./fonts/Itim/fs-metallic.ttf') format('opentype'); 
+  
 }
 
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
+
+
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -36,12 +49,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Itim-Bold, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Itim-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -67,7 +80,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Itim-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -134,14 +147,14 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Itim-Regular;
   font-size: 13px;
   line-height: 1.5;
   color: #999999;
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
+  font-family: Itim-Regular;
   font-size: 13px;
   line-height: 1.5;
   color: #666666;
@@ -156,7 +169,7 @@ iframe {
   margin: 0 auto;
 }
 
-.container-login100 {
+.main_container {
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
@@ -176,7 +189,7 @@ iframe {
   background-blend-mode: overlay;/* Смешивание цвета с фоном */
 }
 
-.wrap-login100 {
+.login_conteiner {
   width: 960px;
   background: #fff;
   border-radius: 10px;
@@ -189,11 +202,12 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 177px 130px 33px 95px;
+  padding: 100px 100px 100px 100px;
+}
+.title-form{
+  margin-bottom: 50px ;
 }
 
-/*------------------------------------------------------------------
-[  ]*/
 .login100-pic {
   width: 316px;
 }
@@ -203,35 +217,44 @@ iframe {
 }
 
 
-/*------------------------------------------------------------------
-[  ]*/
 .login100-form {
-  width: 290px;
+  margin-top: 25px;
+  width: 340px;
 }
 
-.login100-form-title {
-  font-family: Poppins-Bold;
-  font-size: 24px;
-  color: #333333;
+
+.login-form-title {
+  font-family: Itim-Bold;       
+  font-size: 54px;
+  color: #1a1a1a;
   line-height: 1.2;
   text-align: center;
-
   width: 100%;
   display: block;
-  padding-bottom: 54px;
 }
 
 
 /*---------------------------------------------*/
-.wrap-input100 {
+.text-area {
   position: relative;
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
 }
+.test
+{
+  margin-top: 50px;
+  font-family: Itim-Bold;       
+  font-size: 150px;
+  color: #1a1a1a;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
 
-.input100 {
-  font-family: Poppins-Medium;
+.input-form {
+  font-family: Itim;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -247,7 +270,7 @@ iframe {
 
 /*------------------------------------------------------------------
 [ Focus ]*/
-.focus-input100 {
+.focus-input-form {
   display: block;
   position: absolute;
   border-radius: 25px;
@@ -260,7 +283,7 @@ iframe {
   color: rgba(87,184,70, 0.8);
 }
 
-.input100:focus + .focus-input100 {
+.input-form:focus + .focus-input-form {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
@@ -278,10 +301,13 @@ iframe {
     opacity: 0;
   }
 }
-
-.symbol-input100 {
+.login {
+  width: 6%;
+}
+.password {
+  width: 6%;
+}.symbol-input {
   font-size: 15px;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -304,14 +330,14 @@ iframe {
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100 + .symbol-input100 {
+.input-form:focus + .focus-input-form + .symbol-input {
   color: #57b846;
   padding-left: 28px;
 }
 
 /*------------------------------------------------------------------
 [ Button ]*/
-.container-login100-form-btn {
+.container-btn {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -323,8 +349,8 @@ iframe {
   padding-top: 20px;
 }
 
-.login100-form-btn {
-  font-family: Montserrat-Bold;
+.login-btn {
+  font-family: Itim-Bold;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -349,7 +375,7 @@ iframe {
   transition: all 0.4s;
 }
 
-.login100-form-btn:hover {
+.login-btn:hover {
   background: #333333;
 }
 
@@ -419,7 +445,7 @@ iframe {
   right: 8px;
   pointer-events: none;
 
-  font-family: Poppins-Medium;
+  font-family: Itim-Medium;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -435,8 +461,8 @@ iframe {
 }
 
 .alert-validate::after {
-  content: "\f06a";
-  font-family: FontAwesome;
+  content: "⊗";
+  font-family: Itim;
   display: block;
   position: absolute;
   color: #c80000;

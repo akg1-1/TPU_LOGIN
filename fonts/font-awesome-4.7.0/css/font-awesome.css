@@ -190,7 +190,8 @@
   content: "\f002";
 }
 .fa-envelope-o:before {
-  content: "\f003";
+  /* \f003 */
+  content: "4";
 }
 .fa-heart:before {
   content: "\f004";
@@ -799,7 +800,8 @@
   content: "\f0de";
 }
 .fa-envelope:before {
-  content: "\f0e0";
+  /* \f0e0 */
+  content: "5";
 }
 .fa-linkedin:before {
   content: "\f0e1";
@@ -1342,7 +1344,8 @@
   content: "\f198";
 }
 .fa-envelope-square:before {
-  content: "\f199";
+  /* \f199 */
+  content: "5";
 }
 .fa-wordpress:before {
   content: "\f19a";
@@ -2183,10 +2186,12 @@
   content: "\f2b5";
 }
 .fa-envelope-open:before {
-  content: "\f2b6";
+/* \f2b6 */
+  content: "5";
 }
 .fa-envelope-open-o:before {
-  content: "\f2b7";
+  /* \f2b7" */
+  content: "5";
 }
 .fa-linode:before {
   content: "\f2b8";
