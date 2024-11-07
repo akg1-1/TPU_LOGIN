@@ -198,7 +198,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 100px 100px 100px 100px;
 }
 .title-form{
