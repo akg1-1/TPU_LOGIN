@@ -1,0 +1,128 @@
+<!--  Copyright (c) 1999-2005, Oracle.  All rights reserved. -->
+<html dir="LTR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Sign In</title>
+<style>
+.OraHeaderSub
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 16pt;
+     color: #336699;
+}
+.OraInstructionText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+}
+.OraErrorHeader
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 11pt;
+     color: #CC0000;
+     font-weight: bold ;
+}
+.OraErrorText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+}
+.OraFieldText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+     font-weight: normal;
+}
+.OraCopyright
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 8pt;
+     color: #000000;
+}
+.OraHintText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 9pt;
+     color: #000000;
+}
+.OraValueText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+     font-weight: bold;
+}
+</style>
+
+</head><body bgcolor="#FFFFFF" onload="document.forms[0].ssousername.focus();">
+
+
+<!-- 20081219 new code for working with domains -->
+<!--############################################-->   
+<script language="JavaScript">
+<!--
+   function checkform(form) { if(form.domen.value == 'guest') {form.ssousername.value=form.ssousername.value+'_guest';}  return true; }
+// -->
+</script>
+<!--############################################-->   
+
+<center>
+<br>
+
+<font class="OraHeaderSub">Sign In</font>
+<br><br><br>
+<font class="OraInstructionText">Enter your Single Sign-On user name and password to sign in</font><br><br>
+
+
+
+<table border="0" summary="">
+<form method="POST" action="/sso/auth" autocomplete="off" onsubmit="return checkform(this)"></form>
+<input type="hidden" name="v" value="v1.4">
+<input type="hidden" name="site2pstoretoken" value="v1.2~EEEBE2B5~07BF4002206AE259DBA11594CE2A4759C5C771333B5436C813E04CD865DCA2B16C8726333775A33D8B75B914C469F0D3A8C5D57252A9D2DD1DF924E5E0014F4B06D8C372450227B42E8D7055E78B52C558E202ED66A29270CDF1CBD73BA46C6450385BB0EB403645E9246FD25BAEFE809DC5EA821CFBDA73C5D4E6BFEE08F598AF5705AA4DE41A9163BD8C4BDE20C66B641EDCCE0E0F54BA85694B277D402C29737FEAEA5FBB40C28097F3069551DE5AD6FA33CC795684C2EED76BB9DC9503DB">
+<input type="hidden" name="locale" value="">
+<input type="hidden" name="appctx" value="">
+
+<tbody><tr>
+<th id="c2" align="RIGHT"><label for="c2"><font class="OraFieldText">User Name</font></label></th>
+
+<td headers="c2"><input type="text" size="30" maxlength="50" id="c2" name="ssousername"></td>
+
+</tr>
+<tr>
+<th id="c3" align="RIGHT"><label for="c3"><font class="OraFieldText">Password</font></label></th>
+<td headers="c3"> <input type="password" size="30" maxlength="50" id="c3" name="password"> </td>
+</tr>
+
+<!-- MULTIPLE REALM SUPPORT
+<tr>
+<th id="c4" ALIGN="RIGHT"><label for="c4"><font class="OraFieldText">Company</font></label></th>
+<td headers="c4"> <INPUT TYPE="text"  SIZE="30" MAXLENGTH="50" ID="c4" NAME="subscribername" value=""></td>
+</tr>
+-->
+
+<!-- MULTIPLE REALM SUPPORT -->
+<tr>
+<th id="c4" align="RIGHT"><label for="c4"><font class="OraFieldText">Domain</font></label></th>
+<td headers="c4"> <select id="c4" name="domen"><option value="main" selected="selected">TPU</option><option value="guest">GUEST</option></select></td>
+</tr>
+<!-- -->
+
+<tr>
+<th id="c5">&nbsp;</th>
+<td headers="c5" align="left">
+  <font class="OraFieldText"> 
+  <input type="submit" value="Login">
+  <input type="button" name="p_request" value="Cancel" onclick="javascript:document.location.href = 'https://portal.tpu.ru/portal/pls/portal/PORTAL.home'">
+  </font>
+</td>
+</tr>
+
+
+</tbody></table>
+<br>
+<font class="OraCopyright">Unauthorized use of this site is prohibited and may subject you to civil and criminal prosecution.</font>
+<center>
+
+
+</center></center></body></html>
