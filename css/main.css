@@ -443,7 +443,7 @@ iframe {
 @media (max-width: 768px) {
   .login_conteiner {
     padding: 15px 15px 15px 15px;
-    width: 98%;
+    size: 98%;
    
   }
 
@@ -465,7 +465,7 @@ iframe {
 @media (max-width: 576px) {
   .login_conteiner {
     padding: 5px 5px 5px 5px;
-    width: 95%;
+    size: 95%;
   }
   .login-form-title{
     font-size: 36px;
@@ -488,23 +488,25 @@ iframe {
 @media (max-width: 460px) {
   .login_conteiner {
     padding: 5px 5px 5px 5px;
-    width: 95%;
+    width: 90%;
   }
   .login-form-title{
     font-size: 24px;
   }
   .login-btn
   {
-    width: 50%;
+    width: 70%;
   }
   .login100-form
   {
-    width: 35%;
+    width: 75%;
   }  
   .info-text
   {
     width: 80%;
+    font-size: 8px;
   }
+
 
 }
 
@@ -536,7 +538,7 @@ iframe {
 
   font-family: Itim-Medium;
   color: #c80000;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.4;
   text-align: left;
 
@@ -574,5 +576,23 @@ iframe {
   .alert-validate::before {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .alert-validate::before{
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .alert-validate::before{
+    font-size: 9px;
+   
+  }
+}
+@media (max-width: 460px) {
+  .alert-validate::before{
+    font-size: 8px;
+    
   }
 }
